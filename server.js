@@ -67,3 +67,10 @@ const listPost = [
     },
 ]
 
+
+/* Server Blog */
+
+app.get('/blog', (req, res) =>{
+    
+    res.json(listPost)
+})
