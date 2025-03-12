@@ -14,6 +14,9 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+app.use(express.static('public'));
+
+
 /* Liste server */
 
 app.listen(port, () =>{
@@ -48,7 +51,7 @@ const listPost = [
     {
         title : 'Pane',
         content : 'Show a immage of the Italian bread',
-        img : '/images/pane_fritto.jpeg',
+        img : '/images/pane_fritto_dolce.jpeg',
         tag : ["Flour", "Water", "Sale"]
     },
 
